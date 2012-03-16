@@ -41,7 +41,7 @@ package() {
     util/*.sh \
     util/*.so \
     util/echo_cmd \
-    util/gst_{read,play}.32 \
+    util/gst_play \
     util/hinst \
     util/nslaunch \
     util/pacexec \
