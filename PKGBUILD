@@ -29,14 +29,14 @@ package() {
     "$pkgdir$ICAROOT"{,/lib,/util,/keystore,/keystore/cacerts,/config/usertemplate,/keyboard,/help,/icons,/nls,/gtk,/gtk/glade,/nls/{en,de,ja}/{LC_MESSAGES,UTF-8}} 
 
   cd "$srcdir/linuxx86/linuxx86.cor"
+  echo foo
   install --owner=root --group=root --mode=555 \
     wfica \
     wfcmgr \
     *.so \
     *.DLL \
-    # MGP: This only appears in icaclient
-#    FlashContainer.bin \
     "$pkgdir$ICAROOT"
+  echo bar
   install --owner=root --group=root --mode=555 \
     util/*.sh \
     util/*.so \
